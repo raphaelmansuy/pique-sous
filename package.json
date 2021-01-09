@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@types/node": "^14.14.20"
+  },
+  "name": "pique-sous",
+  "version": "1.0.14",
+  "description": "A simple command to retrieve stock information",
+  "main": "./bin/index.js",
+  "dependencies": {
+    "stock-info": "^1.2.0",
+    "typescript": "^4.1.3"
+  },
+  "bin": "bin/index.js",
+  "scripts": {
+    "start": "yarn build && node ./bin/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "node",
+    "typescript",
+    "npm",
+    "stock",
+    "yahoo finance"
+  ],
+  "author": "Raphaël MANSUY",
+  "license": "MIT"
+}
