@@ -3,7 +3,7 @@
     "@types/node": "^14.14.20"
   },
   "name": "pique-sous",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A simple command to retrieve stock information",
   "main": "./bin/index.js",
   "dependencies": {
@@ -24,6 +24,16 @@
     "stock",
     "yahoo finance"
   ],
-  "author": "Raphaël MANSUY",
+  "contributors": [
+    "raphaelmansuy"
+  ],
+  "repository": {
+    "url": "https://github.com/raphaelmansuy/pique-sous.git",
+    "type": ""
+  },
+  "author": {
+    "email": "raphael.mansuy@gmail.com",
+    "name": "raphaelmansuy"
+  },
   "license": "MIT"
 }
