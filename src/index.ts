@@ -1,9 +1,8 @@
-#!/usr/bin/env npx ts-node
+#!/usr/bin/env node
 
-import { getSingleStockInfo } from "stock-info"
+import { getSingleStockInfo } from "./getStock"
 import * as fs from "fs"
 import * as Path from "path"
-import { version } from "typescript"
 
 /**
  *  return the arguments of the command except ts-node and index.ts
@@ -15,7 +14,6 @@ const getArgs = () => {
 
 const getVersion = () => {
   const packageJSONPath = Path.resolve(__dirname, "../package.json")
-  //console.log(`retieving file ${packageJSONPath}`)
   const content = fs.readFileSync(packageJSONPath, { encoding: "utf8" })
   const config = JSON.parse(content)
   return config.version
@@ -25,7 +23,6 @@ const getVersion = () => {
  * Command Help
  */
 const printCommandHelp = () => {
-
   const version = getVersion()
   const help = `
 pique-sous (version: ${version})

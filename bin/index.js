@@ -1,7 +1,7 @@
-#!/usr/bin/env npx ts-node
+#!/usr/bin/env node
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const stock_info_1 = require("stock-info");
+const getStock_1 = require("./getStock");
 const fs = require("fs");
 const Path = require("path");
 /**
@@ -13,7 +13,6 @@ const getArgs = () => {
 };
 const getVersion = () => {
     const packageJSONPath = Path.resolve(__dirname, "../package.json");
-    //console.log(`retieving file ${packageJSONPath}`)
     const content = fs.readFileSync(packageJSONPath, { encoding: "utf8" });
     const config = JSON.parse(content);
     return config.version;
@@ -46,6 +45,6 @@ const now = new Date().toISOString();
 // Call the yahoo API for each symbol and display the result on the console
 symbols.forEach((symbol) => {
     console.log(`Retrieving stock information for ${symbol} at date ${now}`);
-    stock_info_1.getSingleStockInfo(symbol).then(console.log);
+    getStock_1.getSingleStockInfo(symbol).then(console.log);
 });
 //# sourceMappingURL=index.js.map
