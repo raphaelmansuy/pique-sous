@@ -15,6 +15,7 @@ const getArgs = () => {
 
 const getVersion = () => {
   const packageJSONPath = Path.resolve(__dirname, "../package.json")
+  //console.log(`retieving file ${packageJSONPath}`)
   const content = fs.readFileSync(packageJSONPath, { encoding: "utf8" })
   const config = JSON.parse(content)
   return config.version
