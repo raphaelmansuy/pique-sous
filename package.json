@@ -4,7 +4,7 @@
     "@types/node": "^14.14.20"
   },
   "name": "pique-sous",
-  "version": "1.0.18",
+  "version": "1.0.20",
   "description": "A simple command to retrieve stock information",
   "main": "./bin/index.js",
   "dependencies": {

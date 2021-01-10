@@ -1,22 +1,15 @@
 #!/usr/bin/env node
 
 import { getSingleStockInfo } from "./getStock"
-import * as fs from "fs"
-import * as Path from "path"
+import { getVersion } from "./getVersion"
 
 /**
- *  return the arguments of the command except ts-node and index.ts
+ *  return the arguments of the command except node and index.ts
  */
 const getArgs = () => {
+  // We retrieve all the command argumnts except the first 2
   const args = process.argv.slice(2)
   return args
-}
-
-const getVersion = () => {
-  const packageJSONPath = Path.resolve(__dirname, "../package.json")
-  const content = fs.readFileSync(packageJSONPath, { encoding: "utf8" })
-  const config = JSON.parse(content)
-  return config.version
 }
 
 /**
@@ -34,7 +27,6 @@ Example:
 $ pique-sous MSFT SFIX GOOG
 
 `
-
   console.log(help)
 }
 
