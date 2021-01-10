@@ -1,4 +1,4 @@
-# A simple command to retrieve stock information
+# A simple command to retrieve stock information from Yahoo Finance
 
 ## Usage
 
