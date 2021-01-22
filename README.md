@@ -1,4 +1,6 @@
 # A simple command to retrieve stock information from Yahoo Finance
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fpique-sous.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fpique-sous?ref=badge_shield)
+
 
 ## Usage
 
@@ -105,3 +107,7 @@ Done in 1.31s.
 ```
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fpique-sous.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fraphaelmansuy%2Fpique-sous?ref=badge_large)
